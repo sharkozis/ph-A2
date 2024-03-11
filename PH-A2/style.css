@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root{
+    --action-col: #FF5400;
+    --font-col: #131318;
+    --input-col: #F3F3F3;
+}
+body{
+    font-family: "Mulish", sans-serif;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo{
+    display: flex;
+}
+.nav-logo>h2{
+    margin-left: 20px;
+}
+.nav-logo>h2>span{
+    color: var(--action-col);
+}
+nav>ul{
+    display: flex;
+}
+nav>ul>li{
+    list-style: none;
+    margin-right: 30px;
+}
+nav>ul>li:hover{
+    color: var(--action-col);
+    cursor: pointer;
+}
+.nav-toggle{
+    display: none;
+}
+
+@media screen and (max-width: 576px){
+    nav>ul{
+        display: none;
+    }
+    .nav-toggle{
+        display: block;
+        margin-right: 50px;
+    }
+}
