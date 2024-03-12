@@ -56,10 +56,6 @@ nav>ul>li:hover{
     background-size: cover;
     background-position: center;
     padding: 40px 20px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
 }
 .banner-container>h1{
     font-size: 6rem;
@@ -107,6 +103,204 @@ nav>ul>li:hover{
     color: white;
 }
 /*================= header part end here===================== */
+.popular-container{
+    margin: 90px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.popular-info{
+    width: 50%;
+}
+.popular-info>h2{
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+.popular-info>p{
+    margin: 20px 0;
+}
+.popular-info>ul{
+    margin-left: 20px;
+}
+.popular-info>ul>li{
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+.web-btn{
+    background-color: var(--action-col);
+    color: white;
+    outline: none;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+/*================= popular part end here===================== */
+.destination-container{
+    margin: 90px 0;
+}
+.destination-container>h2{
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+.destination-container>h2,.destination-container>p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.destination-card-box{
+    display: flex;
+    justify-content: space-between;
+}
+.destination-card-box>div{
+    flex-grow: 1;
+    margin: 5px;
+    position: relative;
+}
+.destination-card-box>div>h2{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    color: white;
+}
+.destination-card-box>div>img{
+    width: 100%;
+    height: 100%;
+}
+/*================= destination part end here===================== */
+.choose-container{
+    margin: 90px 0;
+}
+.choose-container>h2{
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+.choose-container>h2,.choose-container>p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.choose-card1{
+    display: flex;
+    justify-content: space-between;
+}
+.choose-card1>div{
+    background-color: red;
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.choose-card1>div>img,.choose-card1>div>h2,.choose-card1>div>p{
+    margin-bottom: 20px;
+}
+.choose-card1>.choose-card-box1{
+    background-color: #FEFBF7;
+    border: 1px solid #FBB563;
+}
+.choose-card1>.choose-card-box2{
+    background-color: #F5FDFF;
+    border: 1px solid #29CEF6;
+}
+.choose-card-box3{
+ width: 50%;
+ background-color: #FDF6F6;
+ border: 1px solid #F6D4D4;
+ padding: 20px;
+ border-radius: 10px;
+ margin: 20px auto;
+}
+.choose-card-box3>img,.choose-card-box3>h2,.choose-card-box3>p{
+    margin-bottom: 20px;
+}
+/*================= choose part end here===================== */
+.deals-container{
+    margin: 90px 0;
+}
+.deals-container>h2{
+    font-weight: 900;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.deals-container>p,.deals-container>h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.deals-article{
+    background-image: url("./img/Group\ 39.png");
+    border-radius: 10px;
+    background-size: cover;
+    padding: 40px;
+    height: 60vh;
+    background-position: center;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 20px 0;
+}
+.two{
+    justify-content: left;
+    background-image: url('./img/Group\ 40.png');
+}
+.deals-info{
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 30px 150px 30px 40px;
+    position: relative;
+    z-index: 2;
+    height: 80%;
+}
+.deals-info::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: -1;
+}
+.deals-timeline{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.deals-timeline-two{
+    display: flex;
+    margin-left: 20px;
+}
+.deals-timeline-two>div{
+    padding-right:25px ;
+}
+.deals-timeline-two>div>i{
+    color: var(--action-col);
+    margin-right: 10px;
+}
+.deals-timeline>div>i{
+    color: var(--action-col);
+    margin-right: 10px;
+}
+.deals-info>h4{
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+.deals-info>p{
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.deals-info>span{
+    font-size: 1.5rem;
+    color: var(--action-col);
+    font-weight: bold;
+}
+.deals-info>button{
+    background-color: var(--action-col);
+    outline: none;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: white;
+}
+/*================= deals part end here===================== */
 @media screen and (max-width: 576px){
     main{
         margin: 20px;
@@ -116,10 +310,6 @@ nav>ul>li:hover{
     }
     .nav-toggle{
         display: block;
-        margin-right: 20px;
-    }
-    .nav-logo{
-        margin-left: 10px;
     }
     .banner-container{
         height: 70vh;
@@ -145,5 +335,63 @@ nav>ul>li:hover{
     }
     .banner-searchbox>.banner-btn>i{
         margin-right: 20px;
+    }
+    .popular-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .popular-info{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .popular-img>img{
+        width: 100%;
+    }
+    .destination-card-box{
+        flex-direction: column;
+    }
+    .destination-card-box>div>img{
+        height: 200px;
+    }
+    .choose-card1{
+        flex-direction: column;
+    }
+    .choose-card-box3{
+        width: 95%;
+    }
+    .choose-card1>.choose-card-box1{
+        margin-bottom: 20px;
+    }
+    .deals-container>p{
+        font-size: .8rem;
+    }
+    .two{
+        justify-content: center;
+    }
+    .deals-article{
+        justify-content: center;
+        padding: 0 20px;
+        height: 80vh;
+    }
+    .deals-info{
+        padding: 0 20px;
+    }
+    .deals-timeline{
+        flex-direction: column;
+    }
+    .deals-info>h4{
+        font-size: 1.5rem;
+    }
+    .deals-info>p{
+        line-height: 20px;
+    }
+    .deals-info>span{
+        font-size: 1rem;
+    }
+    .deals-timeline>div{
+    }
+    .deals-timeline-two{
+        margin-left: 0;
+        margin-top: 20px;
     }
 }
